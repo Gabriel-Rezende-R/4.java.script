@@ -1,0 +1,33 @@
+@charset 'UTF-8';
+body{
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    background-color: lightgray;
+    margin: auto;
+    width: 500px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.438);
+}
+
+div > p > input#txtano{
+    width: 80px;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+select#flista{
+    width: 150px;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+

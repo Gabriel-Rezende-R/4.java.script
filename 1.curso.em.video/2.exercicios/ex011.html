@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <title>Exercício 02</title>
+    <style>
+        input#ipais{
+            width: 65px;
+        }
+        section{background-color: white; margin: auto; width: 400px; border-radius: 10px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.568); padding: 15px;}
+
+section p{text-align: justify; text-indent: 12px;}
+section h1{text-align: center; margin: 0px;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exercício 02</h1>
+    </header>
+<main>
+    <section>
+    
+                    <h1>Detector de nacionalidade</h1><br>
+                    Escreva o nome do país em que você nasceu:  <input type="text" id="ipais">
+                    <input type="button" value="Verificar" onclick="verificador()"><br> <br>
+            <div id="iresult"></div>
+    </section>
+</main>
+<footer class="footer">
+    <a href="../index.html">Sumário</a> <a href="../2.exercicios/ex010.html">Exercício 01</a> 
+</footer>
+    <script>
+        function verificador(){
+            var pais = window.document.getElementById("ipais")
+            var result = window.document.getElementById("iresult")
+            pais = (pais.value)
+            result.innerHTML =`Você nasceu no(a) ${pais}! `
+            if(pais != "Brasil"){
+                result.innerHTML += "És um estrangeiro."
+            }else{
+                result.innerHTML += "És Brasileiro."
+            }
+        }
+    </script>
+</body>
+</html>
